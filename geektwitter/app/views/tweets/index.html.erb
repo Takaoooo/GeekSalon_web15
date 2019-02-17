@@ -1,1 +1,7 @@
-Enjoy programming!
+<% @tweets.each do |t|  %>
+    <div>
+        <%= t.body %>
+        <br>
+        <%= t.created_at %>
+    </div>
+<% end %>
