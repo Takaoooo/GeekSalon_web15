@@ -1,6 +1,9 @@
 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-<% @tweets.each do |t|  %>
+<% @tweet.each do |t| %>
     <div>
+        <!-- Timeline Start -->
+        <%= t.user.email %>
+        <!-- Timeline End -->
         <%= t.body %>
         <br>
         <%= t.created_at %>
