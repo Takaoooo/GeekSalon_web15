@@ -1,0 +1,73 @@
+h1{
+    color: chartreuse;
+}
+
+.intro{
+    color: blue;
+}
+
+.box{
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.circle{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 100px;
+}
+.border{
+    text-align: center;
+}
+
+.box1{
+    display: inline-block;
+    background: blue;
+    width: 100px;
+    height: 150px;
+}
+.box2{
+    display: inline-block;
+    background:white;
+    width: 100px;
+    height: 150px;
+}
+.box3{
+    display: inline-block;
+    background: red;
+    width: 100px;
+    height: 150px;
+}
+.square{
+    border-color: gray;
+    border: 0.3px solid;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin-top: 100px;
+}
+.square1{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 25px;
+}
+.square2{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+}
+.square3{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}

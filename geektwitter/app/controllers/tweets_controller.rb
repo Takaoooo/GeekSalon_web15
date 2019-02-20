@@ -1,4 +1,6 @@
 class TweetsController < ApplicationController
+    #ログインしていなかったら、このコントローラーの全ての機能を使えない
+    before_action :authenticate_user!
     def index
         @tweets = Tweet.all.order("id DESC")
     end
