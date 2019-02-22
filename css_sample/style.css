@@ -1,0 +1,16 @@
+.oya {
+    background-color: #fff9e0;
+    border: 1px solid black;
+  }
+  .ko {
+    background-color: #ff6600;
+    color: #fff9e0;
+  }
+  .ko-heiretsu {
+    background-color: #ce2525;
+    color: #fff9e0;
+  }
+  .oya-heiretsu {
+    background-color: #f1c550;
+    color: #fff9e0;
+  }
