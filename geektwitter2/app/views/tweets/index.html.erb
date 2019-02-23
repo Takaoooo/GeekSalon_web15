@@ -1,7 +1,11 @@
 <h1>Tweets#index</h1>
 <p>Find me in app/views/tweets/index.html.erb</p>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
 <% @tweets.each do |t|  %>
     <div>
+        <!-- Timeline Start -->
+        <%= t.user.email %>
+        <!-- Timeline End -->
         <%= t.body %>
         <br>
         <%= t.created_at %>

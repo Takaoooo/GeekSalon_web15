@@ -1,4 +1,6 @@
 class TweetsController < ApplicationController
+  #ログインしていなかったら、このコントローラーの全ての機能を使えない
+  before_action :authenticate_user!
   def index
     @tweets = Tweet.all.order("id DESC")
   end
@@ -7,6 +9,8 @@ class TweetsController < ApplicationController
   end
   def create
     @tweet = Tweet.new(tweet_params)
+    #現在ログインしているUserのidをTweetのuser_idという部分にセット
+    @tweet.user_id = current_user.id
 
     #新しいTweetの保存に成功した場合
     if @tweet.save
