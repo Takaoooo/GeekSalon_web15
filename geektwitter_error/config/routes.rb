@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'tweets/index'
-  get tweets/show => 'tweets#show' 
+  get 'tweets/show' => 'tweets#show'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'hello/index' => 'hello#index'

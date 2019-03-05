@@ -3,3 +3,4 @@ class HelloController < ApplicationController
   end
   def link
   end
+end
