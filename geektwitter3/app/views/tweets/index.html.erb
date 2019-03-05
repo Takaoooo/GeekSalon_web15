@@ -1,2 +1,12 @@
 <h1>Tweets#index</h1>
 <p>Find me in app/views/tweets/index.html.erb</p>
+<%= link_to "新規投稿ページへ", new_tweet_path %>
+<div class="tweets-container">
+  <% @tweets.each do |t| %>
+    <div class="tweet">
+      <%= t.body %>
+      <%= t.created_at %>
+      <%= link_to "詳細へ", tweet_path(t.id) %>
+    </div>
+  <% end %>
+</div>

@@ -1,2 +1,11 @@
-<h1>Tweets#new</h1>
+<h1>GeekTwitter</h1>
 <p>Find me in app/views/tweets/new.html.erb</p>
+<h3>新規Tweet</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_field :body, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_path %>
