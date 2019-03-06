@@ -6,5 +6,12 @@
   <p><%= @tweet.created_at %></p>
   <%= link_to "編集する", edit_tweet_path(@tweet.id) %>
 </div>
+<div class="card w-50">
+  <div class="card-body">
+    <h5 class="card-title">Tweet詳細</h5>
+    <p class="card-text"><%= @tweet.body %></p>
+    <%= link_to "編集する", edit_tweet_path(@tweet.id), :class => "btn btn-primary" %>
+  </div>
+</div>
 
 <%= link_to "Tweet一覧に戻る", tweets_path %>
